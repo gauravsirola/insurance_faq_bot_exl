@@ -3,15 +3,12 @@ import streamlit as st
 st.set_page_config(layout="wide")
 import pandas as pd
 import numpy as np
-import re
 import openai
-import os
 import time
-from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
+from openai.embeddings_utils import distances_from_embeddings
 import tiktoken
 # Load the cl100k_base tokenizer which is designed to work with the ada-002 model
 tokenizer = tiktoken.get_encoding("cl100k_base")
-api_key ="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"
 openai.api_key = st.secrets["openai_key"]
 
 df = pd.read_parquet('data_with_embeddings.parquet')
