@@ -6,3 +6,4 @@ tiktoken
 matplotlib
 plotly
 scipy
+scikit-learn
