@@ -5,3 +5,4 @@ streamlit
 tiktoken
 matplotlib
 plotly
+scipy
